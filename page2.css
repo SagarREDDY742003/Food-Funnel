@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    float: left;
+}
+/*-----------------nav bar--------------------------------*/
+.navbar{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    position:fixed;
+    background-color: #065b8f;
+    z-index: 1;
+}
+.left{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.right{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 20%;
+}
+.left h1{
+     width: auto;
+     margin:0 2% 0 2%;
+     color: rgb(255, 255, 255);
+     font-weight: 600;
+}
+.left button{
+    width: 80px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.left button a{
+    text-decoration: none;
+    color: black;
+}
+.navbar button:hover{
+    background-color: orange;
+}
+.navbar a:hover{
+    color: aliceblue;
+}
+.navbar i{
+    width: auto;
+    font-size: 30px;
+}
+.navbar p{
+    width: auto;
+    color: aliceblue;
+    margin-left: 8px;
+    font-size: 20px;
+}
+@media only screen and (max-width:650px) {
+    .left{
+        width:75% ;
+    }
+    .right{
+        width: 25%;
+    }
+    .left h1{
+        font-size: 26px;
+    }
+}
+/*--------------------container-------------------------------------*/
+.container{
+    width: 100vw;
+    height:auto;
+    margin-top: 66px;
+    background-color:rgb(245, 249, 252);
+    padding: 2%;
+}
+/*-----------------selection----------------------------------------*/
+.selection{
+    width: 18%;
+    height:auto;
+    position: fixed;
+}
+.selection1{
+    padding:0;
+    width: 100%;
+    background-color: rgb(171, 234, 176);
+    border-radius: 10px 10px 0px 0px;
+}
+form{
+    width: 100%;
+}
+.filter1{
+    width: 100%;
+    height: 50%;
+}
+.filter1 h2{
+    border-radius: 10px 10px 0px 0px;
+}
+.selection h2{
+    width: 100%;
+    height: 20%;
+    padding-top: 2%;
+    text-align: center;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    background-color: rgb(187, 130, 184);
+}
+.select{
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    margin-left: 5%;
+}
+.select input{
+    width: 100%;
+}
+.select p{
+    margin-left: 2px;
+    font-weight: 500;
+}
+.filter2{
+    width: 100%;
+    height:50%;
+}
+.filter2 h2{
+    border-top: 2px solid rgb(240, 240, 240);
+}
+.apply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(171, 234, 176) ;
+    border-top: 2px solid rgb(234, 234, 234);
+    border-radius: 0px 0px 10px 10px ;
+}
+.selection button{
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(163, 203, 249);
+}
+.selection button:hover{
+    background-color: rgb(73, 141, 219);
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width:1200px){
+    .selection{
+        width: 100%;
+        height: auto;
+        position:static;
+    }
+    .selection1{
+        display: flex;
+        margin-left: 10%;
+        width: 80%;
+        height: 200px;
+    }
+    .filter1{
+        width: 50%;
+        height: 100%;
+        border-right: 2px solid white;
+    }
+    .filter1 h2{
+        border-radius: 10px 0px 0px 0px;
+    }
+    .filter2{
+        width: 50%;
+        height: 100%;
+    }
+    .filter2 h2{
+        border-radius: 0px 10px 0px 0px;
+        border-top: none;
+    }
+    .apply{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/*--------------------------container item--------------------------------*/
+.container-item{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:74%;
+    height: auto;
+    margin-left:24%;
+    padding-bottom: 20px;
+}
+.item{
+    display: flex;
+    margin-top: 20px;
+    width: 90%;
+    height: 250px;
+    background-color:rgb(189, 213, 216);
+    border-radius: 10px;
+    border: none;
+    
+}
+.item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.res-img{
+    width: 35%;
+    height: 100%;
+    padding: 2%;
+}
+.res-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.details{
+    width:60% ;
+    height: 100%;
+    padding: 1%;
+}
+.details h1{
+    width: 100%;
+    padding: 1%;
+    height: 20%;
+    color: rgb(0, 0, 0);
+}
+@media only screen and (max-width:515px) {
+    .details h1{
+        font-size: 20px;
+    }
+}
+.details p{
+    width: 100%;
+    padding: 1%;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.star{
+    display: flex;
+    width: 50%;
+    margin: 2px;
+}
+.star i{
+    width: fit-content;
+    background-color: rgba(0, 87, 99, 0.401);
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 7px;
+}
+.bttn{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    height: 40%;
+}
+
+.bttn button{
+    width: 100px;
+    margin: 1%;
+    height: 30px;
+    border: none;
+    color: aliceblue;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn1{background-color: rgb(36, 97, 252);}
+.btn2{background-color: rgb(255, 32, 32);}
+.btn3{background-color: rgba(2, 195, 12, 0.887);}
+.btn4{background-color: rgb(219, 109, 0);}
+@media only screen and (max-width:1200px){
+    .container{
+        width: 100vw;
+    }
+    .container-item{
+        margin-top: 20px;
+        margin-left: 1%;
+        width: 98%;
+    }
+    .item{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .item{
+        height: 180px;
+    } 
+    .bttn button{
+        height: 20px; 
+    }
+    .bttn{
+        height:auto;
+    }
+    .details p{
+        padding: 0.5%;
+    }
+}
